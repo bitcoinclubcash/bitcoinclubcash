@@ -255,7 +255,7 @@ void run_context_tests(void) {
 
 void run_sha256_tests(void) {
     static const char *inputs[8] = {
-        "", "abc", "message digest", "secure hash algorithm", "SHA256 is considered to be safe",
+        "", "club", "message digest", "secure hash algorithm", "SHA256 is considered to be safe",
         "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
         "For this sample, this 63-byte string will be used as input data",
         "This is exactly 64 bytes long, not counting the terminating byte"

@@ -1,3 +1,3 @@
 <?php
 
-phutil_register_library('arcanist-abc', __FILE__);
+phutil_register_library('arcanist-club', __FILE__);

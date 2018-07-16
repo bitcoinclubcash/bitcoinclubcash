@@ -1,22 +1,22 @@
-Contributing to Bitcoin ABC
+Contributing to Bitcoin CLUB
 ===========================
 
-The Bitcoin ABC project welcomes contributors!
+The Bitcoin CLUB project welcomes contributors!
 
-This guide is intended to help developers contribute effectively to Bitcoin ABC.
+This guide is intended to help developers contribute effectively to Bitcoin CLUB.
 
 Communicating with Developers
 -----------------------------
 
-To get in contact with ABC developers, we monitor a telegram supergroup.  The
-intent of this group is specifically to facilitate development of Bitcoin-ABC,
+To get in contact with CLUB developers, we monitor a telegram supergroup.  The
+intent of this group is specifically to facilitate development of Bitcoin-CLUB,
 and to welcome people who wish to participate.
 
 https://t.me/joinchat/HCYr50mxRWjA2uLqii-psw
 
 Acceptable use of this supergroup includes the following:
 
-* Introducing yourself to other ABC developers.
+* Introducing yourself to other CLUB developers.
 * Getting help with your development environment.
 * Discussing how to complete a patch.
 
@@ -25,10 +25,10 @@ It is not for:
 * Market discussion
 * Non-constructive criticism
 
-Bitcoin ABC Development Philosophy
+Bitcoin CLUB Development Philosophy
 ----------------------------------
 
-Bitcoin ABC aims for fast iteration and continuous integration.
+Bitcoin CLUB aims for fast iteration and continuous integration.
 
 This means that there should be quick turnaround for patches to be proposed,
 reviewed, and committed. Changes should not sit in a queue for long.
@@ -60,10 +60,10 @@ quickly, it should be reverted, and re-applied later when it no longer breaks th
 top priority, more important than completing other tasks.
 - Automate as much as possible, and spend time on things only humans can do.
 
-Here are some handy links for development practices aligned with Bitcoin ABC:
+Here are some handy links for development practices aligned with Bitcoin CLUB:
 
 - [Developer Notes](doc/developer-notes.md)
-- [Statement of Bitcoin ABC Values and Visions](https://www.yours.org/content/bitcoin-abc---our-values-and-vision-a282afaade7c)
+- [Statement of Bitcoin CLUB Values and Visions](https://www.yours.org/content/bitcoin-club---our-values-and-vision-a282afaade7c)
 - How to Do Code Reviews Like a Human [Part 1](https://mtlynch.io/human-code-reviews-1/) [Part 2](https://mtlynch.io/human-code-reviews-2/)
 - [Large Diffs Are Hurting Your Ability To Ship](https://medium.com/@kurtisnusbaum/large-diffs-are-hurting-your-ability-to-ship-e0b2b41e8acf)
 - [Stacked Diffs: Keeping Phabricator Diffs Small](https://medium.com/@kurtisnusbaum/stacked-diffs-keeping-phabricator-diffs-small-d9964f4dcfa6)
@@ -73,7 +73,7 @@ Here are some handy links for development practices aligned with Bitcoin ABC:
 - [The importance of fixing bugs immediately]{https://youtu.be/E2MIpi8pIvY?t=16m0s}
 
 
-Getting set up with the Bitcoin ABC Repository
+Getting set up with the Bitcoin CLUB Repository
 ----------------------------------------------
 
 1. Create an account at `https://reviews.bitcoinabc.org/`
@@ -106,9 +106,9 @@ Paste contents from: `/home/*username*/.ssh/id_rsa.pub`
 5. Clone the repository and install Arcanist certificate:
 
 ```
-git clone ssh://vcs@reviews.bitcoinabc.org:2221/source/bitcoin-abc.git
+git clone ssh://vcs@reviews.bitcoinabc.org:2221/source/bitcoin-club.git
 
-cd bitcoin-abc
+cd bitcoin-club
 
 arc install-certificate
 ```
@@ -126,7 +126,7 @@ may have to install clang-format-4.0 and autopep8. clang-format-4.0.0 can be ins
 from http://releases.llvm.org/download.html
 
 
-Working with The Bitcoin ABC Repository
+Working with The Bitcoin CLUB Repository
 ---------------------------------------
 
 A typical workflow would be:
@@ -167,7 +167,7 @@ as the Diff number, reviewers, etc.).
 - When reviewers approve your Diff, it should be listed as "ready to Land"
 in Phabricator. When you want to commit your diff to the repository, check out
 type my-topic-branch in git, then type `arc land`. You have now succesfully
-committed a change to the Bitcoin ABC repository.
+committed a change to the Bitcoin CLUB repository.
 
 - When reviewing a Diff, apply the changeset on your local by using
 `arc patch D{NNNN}`

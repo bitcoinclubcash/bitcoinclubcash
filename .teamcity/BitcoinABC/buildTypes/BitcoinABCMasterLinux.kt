@@ -7,7 +7,7 @@ import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
 object BitcoinABCMasterLinux : BuildType({
     uuid = "186070e4-1abd-4bf6-80a9-6e69c9eb299c"
     id = "BitcoinABCMasterLinux"
-    name = "Bitcoin-ABC Master"
+    name = "Bitcoin-CLUB Master"
 
     enablePersonalBuilds = false
     artifactRules = """

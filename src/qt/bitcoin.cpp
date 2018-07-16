@@ -95,7 +95,7 @@ static void InitMessage(const std::string &message) {
  * Translate string to current locale using Qt.
  */
 static std::string Translate(const char *psz) {
-    return QCoreApplication::translate("bitcoin-abc", psz).toStdString();
+    return QCoreApplication::translate("bitcoin-club", psz).toStdString();
 }
 
 static QString GetLangTerritory() {
@@ -182,7 +182,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext &context,
 #endif
 
 /**
- * Class encapsulating Bitcoin ABC startup and shutdown.
+ * Class encapsulating Bitcoin CLUB startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinABC : public QObject {
@@ -570,21 +570,21 @@ static void MigrateSettings() {
         // default c'tor below picks up settings file location based on
         // QApplication::applicationName(), et al -- which was already set
         // in main()
-        abc;
+        club;
 #ifdef Q_OS_DARWIN
     // Disable bogus OSX keys from MacOS system-wide prefs that may cloud our
     // judgement ;) (this behavior is also documented in QSettings docs)
     legacy.setFallbacksEnabled(false);
-    abc.setFallbacksEnabled(false);
+    club.setFallbacksEnabled(false);
 #endif
     const QStringList legacyKeys(legacy.allKeys());
 
-    // We only migrate settings if we have Core settings but no Bitcoin-ABC
+    // We only migrate settings if we have Core settings but no Bitcoin-CLUB
     // settings
-    if (!legacyKeys.isEmpty() && abc.allKeys().isEmpty()) {
+    if (!legacyKeys.isEmpty() && club.allKeys().isEmpty()) {
         for (const QString &key : legacyKeys) {
             // now, copy settings over
-            abc.setValue(key, legacy.value(key));
+            club.setValue(key, legacy.value(key));
         }
     }
 }
@@ -652,8 +652,8 @@ int main(int argc, char *argv[]) {
     QApplication::setOrganizationName(QAPP_ORG_NAME);
     QApplication::setOrganizationDomain(QAPP_ORG_DOMAIN);
     QApplication::setApplicationName(QAPP_APP_NAME_DEFAULT);
-    // Migrate settings from core's/our old GUI settings to Bitcoin ABC
-    // only if core's exist but Bitcoin ABC's doesn't.
+    // Migrate settings from core's/our old GUI settings to Bitcoin CLUB
+    // only if core's exist but Bitcoin CLUB's doesn't.
     // NOTE -- this function needs to be called *after* the above 3 lines
     // that set the app orgname and app name! If you move the above 3 lines
     // to elsewhere, take this call with you!

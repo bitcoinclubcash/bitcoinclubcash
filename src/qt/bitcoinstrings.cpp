@@ -9,32 +9,32 @@
 #define UNUSED
 #endif
 static const char UNUSED *bitcoin_strings[] = {
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Bitcoin ABC"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "The %s developers"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Bitcoin CLUB"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "The %s developers"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "(1 = keep tx meta data e.g. account owner and payment "
                       "request information, 2 "
                       "= drop tx meta data)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "-maxtxfee is set very high! Fees this large could be paid on a single "
         "transaction."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "A fee rate (in %s/kB) that will be used "
                                      "when fee estimation has insufficient "
                                      "data (default: %s)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Accept connections from outside (default: 1 if no -proxy or -connect/-"
         "noconnect)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Accept relayed transactions received "
                                      "from whitelisted peers even when not "
                                      "relaying transactions (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Allow JSON-RPC connections from specified source. Valid "
                       "for <ip> are a "
@@ -42,175 +42,175 @@ static const char UNUSED *bitcoin_strings[] = {
                       "1.2.3.4/255.255.255.0) or "
                       "a network/CIDR (e.g. 1.2.3.4/24). This option can be "
                       "specified multiple times"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Bind to given address and always listen "
                                      "on it. Use [host]:port notation for "
                                      "IPv6"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Bind to given address and whitelist "
                                      "peers connecting to it. Use [host]:port "
                                      "notation for IPv6"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Bind to given address to listen for "
                                      "JSON-RPC connections. Use [host]:port "
                                      "notation for IPv6. This option can be "
                                      "specified multiple times (default: "
                                      "bind to all interfaces)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Cannot obtain a lock on data directory "
                                      "%s. %s is probably already running."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Connect only to the specified node(s); "
                                      "-noconnect or -connect=0 alone to "
                                      "disable automatic connections"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Create new files with system default permissions, "
                       "instead of umask 077 (only "
                       "effective with disabled wallet functionality)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Delete all wallet transactions and only recover those parts of the "
         "blockchain through -rescan on startup"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Discover own IP addresses (default: 1 "
                                      "when listening and no -externalip or -"
                                      "proxy)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Distributed under the MIT software license, see the "
                       "accompanying file %s or "
                       "%s"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Do not keep transactions in the mempool "
                                      "longer than <n> hours (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Equivalent bytes per sigop in transactions for relay "
                       "and mining (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Error loading %s: You can't enable HD "
                                      "on a already existing non-HD wallet"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Error reading %s! All keys read correctly, but "
                       "transaction data or address "
                       "book entries might be missing or incorrect."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Error: Listening for incoming connections failed "
                       "(listen returned error %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Execute command when a relevant alert is received or we "
                       "see a really long "
                       "fork (%s in cmd is replaced by message)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Execute command when a wallet transaction changes (%s "
                       "in cmd is replaced by "
                       "TxID)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Execute command when the best block "
                                      "changes (%s in cmd is replaced by block "
                                      "hash)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Extra transactions to keep in memory "
                                      "for compact block reconstructions "
                                      "(default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Fees (in %s/kB) smaller than this are considered zero "
                       "fee for relaying, "
                       "mining and transaction creation (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Fees (in %s/kB) smaller than this are "
                                      "considered zero fee for transaction "
                                      "creation (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Force relay of transactions from "
                                      "whitelisted peers even if they violate "
                                      "local relay policy (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "How thorough the block verification of "
                                      "-checkblocks is (0-4, default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "If <category> is not supplied or if "
                                      "<category> = 1, output all debugging "
                                      "information."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "If paytxfee is not set, include enough fee so transactions begin "
         "confirmation on average within n blocks (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "If this block is in the chain assume that it and its "
                       "ancestors are valid and "
                       "potentially skip their script verification (0 to verify "
                       "all, default: %s, "
                       "testnet: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Invalid amount for -maxtxfee=<amount>: '%s' (must be at "
                       "least the minrelay "
                       "fee of %s to prevent stuck transactions)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Maintain a full transaction index, used "
                                      "by the getrawtransaction rpc call "
                                      "(default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Maximum allowed median peer time offset adjustment. Local perspective "
         "of "
         "time may be influenced by peers forward or backward by this amount. "
         "(default: %u seconds)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Maximum size of data in data carrier transactions we relay and mine "
         "(default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Maximum total fees (in %s) to use in a "
                                      "single wallet transaction or raw "
                                      "transaction; setting this too low may "
                                      "abort large transactions (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Number of seconds to keep misbehaving "
                                      "peers from reconnecting (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Output debugging information (default: "
                                      "%u, supplying <category> is optional)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Please check that your computer's date "
                                      "and time are correct! If your clock "
                                      "is wrong, %s will not work properly."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Please contribute if you find %s useful. Visit %s for "
                       "further information "
                       "about the software."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Prune configured below the minimum of "
                                      "%d MiB.  Please use a higher number."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Prune: last wallet synchronisation goes beyond pruned data. You need "
         "to -"
         "reindex (download the whole blockchain again in case of pruned node)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Query for peer addresses via DNS "
                                      "lookup, if low on addresses (default: 1 "
                                      "unless -connect/-noconnect)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Randomize credentials for every proxy "
                                      "connection. This enables Tor stream "
                                      "isolation (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Reduce storage requirements by enabling pruning (deleting) of old "
         "blocks. "
@@ -226,34 +226,34 @@ static const char UNUSED *bitcoin_strings[] = {
         "= automatically prune block files to stay under the specified target "
         "size in "
         "MiB)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Rescans are not possible in pruned mode. You will need "
                       "to use -reindex which "
                       "will download the whole blockchain again."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Set lowest fee rate (in %s/kB) for "
                                      "transactions to be included in block "
                                      "creation. (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Set maximum size of high-priority/low-fee transactions "
                       "in bytes (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Set the number of script verification threads (%u to "
                       "%d, 0 = auto, <0 = "
                       "leave that many cores free, default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Sets the serialization of raw transaction or block hex "
                       "returned in non-"
                       "verbose mode, non-segwit(0) or segwit(1) (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Support filtering of blocks and transaction with bloom "
                       "filters (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "The block database contains a block "
                                      "which appears to be from the future. "
                                      "This may be due to your computer's date "
@@ -261,61 +261,61 @@ static const char UNUSED *bitcoin_strings[] = {
                                      "rebuild the block database if you are "
                                      "sure that your computer's date and "
                                      "time are correct"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "The transaction amount is too small to "
                                      "send after the fee has been deducted"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "This is a pre-release test build - use "
                                      "at your own risk - do not use for "
                                      "mining or merchant applications"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "This is the transaction fee you may pay "
                                      "when fee estimates are not available."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "This product includes software developed by the OpenSSL "
                       "Project for use in "
                       "the OpenSSL Toolkit %s and cryptographic software "
                       "written by Eric Young and "
                       "UPnP software written by Thomas Bernard."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Total length of network version string (%i) exceeds "
                       "maximum length (%i). "
                       "Reduce the number or size of uacomments."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Tries to keep outbound traffic under "
                                      "the given target (in MiB per 24h), 0 = "
                                      "no limit (default: %d)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Unable to rewind the database to a pre-fork state. You will need to "
         "redownload the blockchain"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Unsupported argument -socks found. Setting SOCKS "
                       "version isn't possible "
                       "anymore, only SOCKS5 proxies are supported."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Unsupported argument -whitelistalwaysrelay ignored, use "
                       "-whitelistrelay and/"
                       "or -whitelistforcerelay."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Use UPnP to map the listening port (default: 1 when "
                       "listening and no -proxy)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Use hierarchical deterministic key generation (HD) "
                       "after BIP32. Only has "
                       "effect during wallet creation/first start"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Use separate SOCKS5 proxy to reach "
                                      "peers via Tor hidden services (default: "
                                      "%s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Username and hashed password for JSON-RPC connections. "
                       "The field <userpw> "
@@ -327,321 +327,321 @@ static const char UNUSED *bitcoin_strings[] = {
                       "arguments. This option can "
                       "be specified multiple times"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Wallet will not create transactions that violate mempool chain limits "
         "(default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Warning: The network does not appear to "
                                      "fully agree! Some miners appear to "
                                      "be experiencing issues."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Warning: Unknown block versions being "
                                      "mined! It's possible unknown rules are "
                                      "in effect"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Warning: Wallet file corrupt, data salvaged! Original "
                       "%s saved as %s in %s; "
                       "if your balance or transactions are incorrect you "
                       "should restore from a "
                       "backup."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "Warning: We do not appear to fully agree with our "
                       "peers! You may need to "
                       "upgrade, or other nodes may need to upgrade."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         ""
         "Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) "
         "or CIDR "
         "notated network (e.g. 1.2.3.0/24). Can be specified multiple times."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "Whitelisted peers cannot be DoS banned "
                                      "and their transactions are always "
                                      "relayed, even if they are already in "
                                      "the mempool, useful e.g. for a gateway"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       ""
                       "You need to rebuild the database using -reindex to go "
                       "back to unpruned "
                       "mode.  This will redownload the entire blockchain"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", ""
+    QT_TRANSLATE_NOOP("bitcoin-club", ""
                                      "You need to rebuild the database using "
                                      "-reindex-chainstate to change -txindex"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "%s corrupt, salvage failed"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "%s is set very high!"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "(default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "(default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "-maxmempool must be at least %d MB"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "<category> can be:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "%s corrupt, salvage failed"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "%s is set very high!"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "(default: %s)"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "(default: %u)"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "-maxmempool must be at least %d MB"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "<category> can be:"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Accept command line and JSON-RPC commands"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Accept public REST requests (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Add a node to connect to and attempt to keep the connection open"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Allow DNS lookups for -addnode, -seednode and -connect"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Always query for peer addresses via DNS lookup (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Append comment to the user agent string"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Append comment to the user agent string"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Attempt to recover private keys from a corrupt wallet on startup"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Automatically create Tor hidden service (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Block creation options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Cannot downgrade wallet"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Cannot resolve -%s address: '%s'"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Cannot write default address"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Chain selection options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Change index out of range"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Connect through SOCKS5 proxy"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Block creation options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Cannot downgrade wallet"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Cannot resolve -%s address: '%s'"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Cannot write default address"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Chain selection options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Change index out of range"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Connect through SOCKS5 proxy"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Connect to a node to retrieve peer addresses, and disconnect"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Connection options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Copyright (C) %i-%i"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Corrupted block database detected"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Debugging/Testing options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Connection options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Copyright (C) %i-%i"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Corrupted block database detected"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Debugging/Testing options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Do not load the wallet and disable wallet RPC calls"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Do you want to rebuild the block database now?"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Done loading"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Enable publish hash block in <address>"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Done loading"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Enable publish hash block in <address>"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Enable publish hash transaction in <address>"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Enable publish raw block in <address>"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Enable publish raw block in <address>"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Enable publish raw transaction in <address>"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Enable transaction replacement in the memory pool (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error initializing block database"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error initializing block database"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Error initializing wallet database environment %s!"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error loading %s"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error loading %s: Wallet corrupted"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error loading %s"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error loading %s: Wallet corrupted"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Error loading %s: Wallet requires newer version of %s"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error loading %s: You can't disable HD "
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error loading %s: You can't disable HD "
                                      "on a already existing HD wallet"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error loading block database"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error opening block database"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error loading block database"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error opening block database"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Error reading from database, shutting down."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Error: A fatal internal error occurred, see debug.log for details"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Error: Disk space is low!"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Error: Disk space is low!"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Failed to listen on any port. Use -listen=0 if you want this."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Fee (in %s/kB) to add to transactions you send (default: %s)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "How many blocks to check at startup (default: %u, 0 = all)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Importing..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Importing..."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Imports blocks from external blk000??.dat file on startup"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Include IP addresses in debug output (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Incorrect or no genesis block found. Wrong datadir for network?"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Information"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Information"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Initialization sanity check failed. %s is shutting down."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Insufficient funds"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Invalid -onion address: '%s'"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Invalid -proxy address: '%s'"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Invalid amount for -%s=<amount>: '%s'"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Insufficient funds"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Invalid -onion address: '%s'"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Invalid -proxy address: '%s'"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Invalid amount for -%s=<amount>: '%s'"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Invalid amount for -fallbackfee=<amount>: '%s'"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Invalid netmask specified in -whitelist: '%s'"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Keep at most <n> unconnectable transactions in memory (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Keep the transaction memory pool below <n> megabytes (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Keypool ran out, please call keypoolrefill first"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Listen for JSON-RPC connections on "
+    QT_TRANSLATE_NOOP("bitcoin-club", "Listen for JSON-RPC connections on "
                                      "<port> (default: %u or testnet: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Listen for connections on <port> (default: %u or testnet: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Loading addresses..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Loading banlist..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Loading block index..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Loading wallet..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Loading addresses..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Loading banlist..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Loading block index..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Loading wallet..."),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Location of the auth cookie (default: data dir)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Maintain at most <n> connections to peers (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Make the wallet broadcast transactions"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Make the wallet broadcast transactions"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Need to specify a port with -whitebind: '%s'"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Node relay options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Not enough file descriptors available."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Node relay options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Not enough file descriptors available."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Password for JSON-RPC connections"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Password for JSON-RPC connections"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Prepend debug output with timestamp (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Print this help message and exit"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Print version and exit"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Print this help message and exit"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Print version and exit"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Prune cannot be configured with a negative value."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Prune mode is incompatible with -txindex."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Pruning blockstore..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "RPC server options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Pruning blockstore..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "RPC server options:"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Rebuild chain state and block index from the blk*.dat files on disk"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Rebuild chain state from the currently indexed blocks"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Reducing -maxconnections from %d to %d, "
+    QT_TRANSLATE_NOOP("bitcoin-club", "Reducing -maxconnections from %d to %d, "
                                      "because of system limitations."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Relay and mine data carrier transactions (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Relay non-P2SH multisig (default: %u)"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Relay non-P2SH multisig (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Rescan the block chain for missing wallet transactions on startup"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Rescanning..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Rewinding blocks..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Rescanning..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Rewinding blocks..."),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Run in the background as a daemon and accept commands"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Send trace/debug info to console instead of debug.log file"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Send transactions as zero-fee transactions if possible (default: %u)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Set database cache size in megabytes (%d to %d, default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Set key pool size to <n> (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Set key pool size to <n> (default: %u)"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Set maximum block size in bytes (default: %d)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Set the number of threads to service RPC calls (default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Show all debugging options (usage: --help -help-debug)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Shrink debug.log file on client startup (default: 1 when no -debug)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Signing transaction failed"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Signing transaction failed"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Specify configuration file (default: %s)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Specify data directory"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Specify pid file (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Specify data directory"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Specify pid file (default: %s)"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Specify wallet file (within data directory)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Specify your own public address"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Specify your own public address"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Spend unconfirmed change when sending transactions (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Starting network threads..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "The source code is available from %s."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Starting network threads..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "The source code is available from %s."),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "The transaction amount is too small to pay the fee"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "The wallet will avoid paying less than the minimum relay fee."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "This is experimental software."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "This is experimental software."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "This is the minimum transaction fee you pay on every transaction."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "This is the transaction fee you will pay if you send a transaction."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Threshold for disconnecting misbehaving peers (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Tor control port password (default: empty)"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Tor control port to use if onion listening enabled (default: %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Transaction amount too small"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Transaction amount too small"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Transaction amounts must not be negative"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Transaction has too long of a mempool chain"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Transaction must have at least one recipient"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Transaction too large for fee policy"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Transaction too large"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Transaction too large for fee policy"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Transaction too large"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Unable to bind to %s on this computer (bind returned error %s)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Unable to bind to %s on this computer. "
+    QT_TRANSLATE_NOOP("bitcoin-club", "Unable to bind to %s on this computer. "
                                      "%s is probably already running."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Unable to start HTTP server. See debug log for details."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Unknown network specified in -onlynet: '%s'"),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Unsupported argument -benchmark ignored, use -debug=bench."),
     QT_TRANSLATE_NOOP(
-        "bitcoin-abc",
+        "bitcoin-club",
         "Unsupported argument -debugnet ignored, use -debug=net."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Unsupported argument -tor found, use -onion."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Upgrade wallet to latest format on startup"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Use UPnP to map the listening port (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Use the test chain"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Use the test chain"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "User Agent comment (%s) contains unsafe characters."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Username for JSON-RPC connections"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Verifying blocks..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Verifying wallet..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Username for JSON-RPC connections"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Verifying blocks..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Verifying wallet..."),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Wallet %s resides outside data directory %s"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Wallet debugging/testing options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Wallet debugging/testing options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Wallet needed to be rewritten: restart %s to complete"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Wallet options:"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Warning"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club", "Wallet options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Warning"),
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Warning: unknown new rules activated (versionbit %i)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc",
+    QT_TRANSLATE_NOOP("bitcoin-club",
                       "Whether to operate in a blocks only mode (default: %u)"),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "Zapping all transactions from wallet..."),
-    QT_TRANSLATE_NOOP("bitcoin-abc", "ZeroMQ notification options:"),
+    QT_TRANSLATE_NOOP("bitcoin-club", "Zapping all transactions from wallet..."),
+    QT_TRANSLATE_NOOP("bitcoin-club", "ZeroMQ notification options:"),
 };

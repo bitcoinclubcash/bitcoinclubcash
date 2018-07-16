@@ -115,23 +115,23 @@ void RPCNestedTests::rpcNestedTests() {
 
     RPCConsole::RPCParseCommandLine(result, "importprivkey", false, &filtered);
     QVERIFY(filtered == "importprivkey(…)");
-    RPCConsole::RPCParseCommandLine(result, "signmessagewithprivkey abc", false,
+    RPCConsole::RPCParseCommandLine(result, "signmessagewithprivkey club", false,
                                     &filtered);
     QVERIFY(filtered == "signmessagewithprivkey(…)");
-    RPCConsole::RPCParseCommandLine(result, "signmessagewithprivkey abc,def",
+    RPCConsole::RPCParseCommandLine(result, "signmessagewithprivkey club,def",
                                     false, &filtered);
     QVERIFY(filtered == "signmessagewithprivkey(…)");
-    RPCConsole::RPCParseCommandLine(result, "signrawtransaction(abc)", false,
+    RPCConsole::RPCParseCommandLine(result, "signrawtransaction(club)", false,
                                     &filtered);
     QVERIFY(filtered == "signrawtransaction(…)");
     RPCConsole::RPCParseCommandLine(result, "walletpassphrase(help())", false,
                                     &filtered);
     QVERIFY(filtered == "walletpassphrase(…)");
     RPCConsole::RPCParseCommandLine(
-        result, "walletpassphrasechange(help(walletpassphrasechange(abc)))",
+        result, "walletpassphrasechange(help(walletpassphrasechange(club)))",
         false, &filtered);
     QVERIFY(filtered == "walletpassphrasechange(…)");
-    RPCConsole::RPCParseCommandLine(result, "help(encryptwallet(abc, def))",
+    RPCConsole::RPCParseCommandLine(result, "help(encryptwallet(club, def))",
                                     false, &filtered);
     QVERIFY(filtered == "help(encryptwallet(…))");
     RPCConsole::RPCParseCommandLine(result, "help(importprivkey())", false,
@@ -141,7 +141,7 @@ void RPCNestedTests::rpcNestedTests() {
                                     false, &filtered);
     QVERIFY(filtered == "help(importprivkey(…))");
     RPCConsole::RPCParseCommandLine(
-        result, "help(importprivkey(abc), walletpassphrase(def))", false,
+        result, "help(importprivkey(club), walletpassphrase(def))", false,
         &filtered);
     QVERIFY(filtered == "help(importprivkey(…), walletpassphrase(…))");
 
@@ -151,21 +151,21 @@ void RPCNestedTests::rpcNestedTests() {
     QVERIFY(result == "[\"\"]");
     RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest \"\"");
     QVERIFY(result == "[\"\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest '' abc");
-    QVERIFY(result == "[\"\",\"abc\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest abc '' abc");
-    QVERIFY(result == "[\"abc\",\"\",\"abc\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest abc  abc");
-    QVERIFY(result == "[\"abc\",\"abc\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest abc\t\tabc");
-    QVERIFY(result == "[\"abc\",\"abc\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(abc )");
-    QVERIFY(result == "[\"abc\"]");
-    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest( abc )");
-    QVERIFY(result == "[\"abc\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest '' club");
+    QVERIFY(result == "[\"\",\"club\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest club '' club");
+    QVERIFY(result == "[\"club\",\"\",\"club\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest club  club");
+    QVERIFY(result == "[\"club\",\"club\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest club\t\tabc");
+    QVERIFY(result == "[\"club\",\"club\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(club )");
+    QVERIFY(result == "[\"club\"]");
+    RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest( club )");
+    QVERIFY(result == "[\"club\"]");
     RPCConsole::RPCExecuteCommandLine(result,
-                                      "rpcNestedTest(   abc   ,   cba )");
-    QVERIFY(result == "[\"abc\",\"cba\"]");
+                                      "rpcNestedTest(   club   ,   cba )");
+    QVERIFY(result == "[\"club\",\"cba\"]");
 
 #if QT_VERSION >= 0x050300
     // do the QVERIFY_EXCEPTION_THROWN checks only with Qt5.3 and higher
@@ -197,15 +197,15 @@ void RPCNestedTests::rpcNestedTests() {
         UniValue);
     // don't tollerate empty arguments when using ,
     QVERIFY_EXCEPTION_THROWN(
-        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest abc,,abc"),
+        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest club,,club"),
         std::runtime_error);
     // don't tollerate empty arguments when using ,
     QVERIFY_EXCEPTION_THROWN(
-        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(abc,,abc)"),
+        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(club,,club)"),
         std::runtime_error);
     // don't tollerate empty arguments when using ,
     QVERIFY_EXCEPTION_THROWN(
-        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(abc,,)"),
+        RPCConsole::RPCExecuteCommandLine(result, "rpcNestedTest(club,,)"),
         std::runtime_error);
 #endif
 

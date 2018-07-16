@@ -2328,7 +2328,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>
@@ -2346,7 +2346,7 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
+        <source>Bitcoin CLUB</source>
         <translation>Биткойн ядро</translation>
     </message>
     <message>

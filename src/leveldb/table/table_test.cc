@@ -688,7 +688,7 @@ TEST(Harness, SimpleSingle) {
   for (int i = 0; i < kNumTestArgs; i++) {
     Init(kTestArgList[i]);
     Random rnd(test::RandomSeed() + 2);
-    Add("abc", "v");
+    Add("club", "v");
     Test(&rnd);
   }
 }
@@ -697,7 +697,7 @@ TEST(Harness, SimpleMulti) {
   for (int i = 0; i < kNumTestArgs; i++) {
     Init(kTestArgList[i]);
     Random rnd(test::RandomSeed() + 3);
-    Add("abc", "v");
+    Add("club", "v");
     Add("abcd", "v");
     Add("ac", "v2");
     Test(&rnd);
@@ -813,7 +813,7 @@ TEST(TableTest, ApproximateOffsetOfPlain) {
   options.compression = kNoCompression;
   c.Finish(options, &keys, &kvmap);
 
-  ASSERT_TRUE(Between(c.ApproximateOffsetOf("abc"),       0,      0));
+  ASSERT_TRUE(Between(c.ApproximateOffsetOf("club"),       0,      0));
   ASSERT_TRUE(Between(c.ApproximateOffsetOf("k01"),       0,      0));
   ASSERT_TRUE(Between(c.ApproximateOffsetOf("k01a"),      0,      0));
   ASSERT_TRUE(Between(c.ApproximateOffsetOf("k02"),       0,      0));
@@ -859,7 +859,7 @@ TEST(TableTest, ApproximateOffsetOfCompressed) {
   const int min_z = expected - kSlop;
   const int max_z = expected + kSlop;
 
-  ASSERT_TRUE(Between(c.ApproximateOffsetOf("abc"), 0, kSlop));
+  ASSERT_TRUE(Between(c.ApproximateOffsetOf("club"), 0, kSlop));
   ASSERT_TRUE(Between(c.ApproximateOffsetOf("k01"), 0, kSlop));
   ASSERT_TRUE(Between(c.ApproximateOffsetOf("k02"), 0, kSlop));
   // Have now emitted a large compressible string, so adjust expected offset.

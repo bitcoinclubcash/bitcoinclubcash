@@ -2984,7 +2984,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>選項:</translation>
@@ -3055,8 +3055,8 @@
         <translation>無法啟動 HTTP 伺服器。詳情請看除錯紀錄。</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin ABC</translation>
+        <source>Bitcoin CLUB</source>
+        <translation>Bitcoin CLUB</translation>
     </message>
     <message>
         <source>The %s developers</source>

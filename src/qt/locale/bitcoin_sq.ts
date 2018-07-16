@@ -778,14 +778,14 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>ABC Bitcoin</translation>
+        <source>Bitcoin CLUB</source>
+        <translation>CLUB Bitcoin</translation>
     </message>
     <message>
         <source>Information</source>

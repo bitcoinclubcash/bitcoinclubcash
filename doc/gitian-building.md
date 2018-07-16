@@ -1,10 +1,10 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Bitcoin ABC using an Ubuntu VM or physical system.*
+*Setup instructions for a Gitian build of Bitcoin CLUB using an Ubuntu VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the Bitcoin
-ABC executables. It provides a way to be reasonably sure that the
+CLUB executables. It provides a way to be reasonably sure that the
 executables are really built from the source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
 
@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
-- [Building Bitcoin ABC](#building-bitcoin-abc)
+- [Building Bitcoin CLUB](#building-bitcoin-club)
 
 
 Preparing the Gitian builder host
@@ -59,12 +59,12 @@ git clone https://github.com/boxcutter/ubuntu.git
 cd ubuntu
 git checkout 1e1f4804315b27eba398de93b8024230d190443a
 packer build -var-file=ubuntu1604.json -only=virtualbox-iso ubuntu.json
-vagrant box add --name abc-xenial box/virtualbox/ubuntu1604-0.1.0.box
+vagrant box add --name club-xenial box/virtualbox/ubuntu1604-0.1.0.box
 popd
 ```
 
-After completion you should be able to run add the box to vagrant as "abc-xenial"
-using `vagrant box add --name abc-xenial <path_to_packer_output.box>`
+After completion you should be able to run add the box to vagrant as "club-xenial"
+using `vagrant box add --name club-xenial <path_to_packer_output.box>`
 
 The final step for running vagrant is:
 
@@ -94,16 +94,16 @@ bin/make-base-vm --lxc --arch amd64 --suite xenial
 There will be a lot of warnings printed during the build of the image. These
 can be ignored.
 
-Building Bitcoin ABC
+Building Bitcoin CLUB
 --------------------
 
-To build Bitcoin ABC (for Linux, OS X and Windows) run the following commands:
+To build Bitcoin CLUB (for Linux, OS X and Windows) run the following commands:
 
 ```bash
-URL=https://github.com/bitcoin-abc/bitcoin-abc.git
+URL=https://github.com/bitcoin-club/bitcoin-club.git
 COMMIT=v0.16.0 # or whatever release tag you wish
 
-# Note the path to descriptors assumes vagrant was used.  These files are within the ABC repository normally.
+# Note the path to descriptors assumes vagrant was used.  These files are within the CLUB repository normally.
 ./bin/gbuild --commit bitcoin=${COMMIT} --url bitcoin=${URL} /vagrant/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit bitcoin=${COMMIT} --url bitcoin=${URL} /vagrant/contrib/gitian-descriptors/gitian-win.yml
 ./bin/gbuild --commit bitcoin=${COMMIT} --url bitcoin=${URL} /vagrant/contrib/gitian-descriptors/gitian-osx.yml

@@ -2,13 +2,13 @@ FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y doxygen graphviz
 
-COPY doc /abc/doc
-COPY src /abc/src
+COPY doc /club/doc
+COPY src /club/src
 
-WORKDIR /abc
+WORKDIR /club
 
 RUN doxygen doc/Doxyfile
 
 FROM nginx:alpine
 
-COPY --from=0 /abc/doc/doxygen/html /usr/share/nginx/html
+COPY --from=0 /club/doc/doxygen/html /usr/share/nginx/html

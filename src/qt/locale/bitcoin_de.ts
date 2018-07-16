@@ -2984,7 +2984,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>Optionen:</translation>
@@ -3054,8 +3054,8 @@
         <translation>Kann HTTP Server nicht starten. Siehe debug log für Details.</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin ABC</translation>
+        <source>Bitcoin CLUB</source>
+        <translation>Bitcoin CLUB</translation>
     </message>
     <message>
         <source>The %s developers</source>

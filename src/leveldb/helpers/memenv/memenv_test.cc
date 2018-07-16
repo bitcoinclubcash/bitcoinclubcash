@@ -54,7 +54,7 @@ TEST(MemEnvTest, Basics) {
 
   // Write to the file.
   ASSERT_OK(env_->NewWritableFile("/dir/f", &writable_file));
-  ASSERT_OK(writable_file->Append("abc"));
+  ASSERT_OK(writable_file->Append("club"));
   delete writable_file;
 
   // Check that append works.
