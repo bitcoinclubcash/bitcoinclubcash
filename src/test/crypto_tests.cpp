@@ -240,7 +240,7 @@ const std::string test1 = LongTestString();
 
 BOOST_AUTO_TEST_CASE(ripemd160_testvectors) {
     TestRIPEMD160("", "9c1185a5c5e9fc54612808977ee8f548b2258d31");
-    TestRIPEMD160("abc", "8eb208f7e05d987a9b044a8e98c6b087f15a0bfc");
+    TestRIPEMD160("club", "8eb208f7e05d987a9b044a8e98c6b087f15a0bfc");
     TestRIPEMD160("message digest", "5d0689ef49d2fae572b881b123a85ffa21595f36");
     TestRIPEMD160("secure hash algorithm",
                   "20397528223b6a5f4cbc2808aba0464e645544f9");
@@ -261,7 +261,7 @@ BOOST_AUTO_TEST_CASE(ripemd160_testvectors) {
 
 BOOST_AUTO_TEST_CASE(sha1_testvectors) {
     TestSHA1("", "da39a3ee5e6b4b0d3255bfef95601890afd80709");
-    TestSHA1("abc", "a9993e364706816aba3e25717850c26c9cd0d89d");
+    TestSHA1("club", "a9993e364706816aba3e25717850c26c9cd0d89d");
     TestSHA1("message digest", "c12252ceda8be8994d5fa0290a47231c1d16aae3");
     TestSHA1("secure hash algorithm",
              "d4d6d2f0ebe317513bbd8d967d89bac5819c2f60");
@@ -282,7 +282,7 @@ BOOST_AUTO_TEST_CASE(sha256_testvectors) {
     TestSHA256(
         "", "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855");
     TestSHA256(
-        "abc",
+        "club",
         "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad");
     TestSHA256(
         "message digest",
@@ -319,7 +319,7 @@ BOOST_AUTO_TEST_CASE(sha512_testvectors) {
         "", "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce"
             "47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e");
     TestSHA512(
-        "abc",
+        "club",
         "ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a"
         "2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f");
     TestSHA512(

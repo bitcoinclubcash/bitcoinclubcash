@@ -173,12 +173,12 @@ public:
 
         // Note that of those with the service bits flag, most only support a
         // subset of possible options.
-        // Bitcoin ABC seeder
+        // Bitcoin CLUB seeder
         vSeeds.push_back(
             CDNSSeedData("bitcoinabc.org", "seed.bitcoinabc.org", true));
         // bitcoinforks seeders
         vSeeds.push_back(CDNSSeedData("bitcoinforks.org",
-                                      "seed-abc.bitcoinforks.org", true));
+                                      "seed-club.bitcoinforks.org", true));
         // BU backed seeder
         vSeeds.push_back(CDNSSeedData("bitcoinunlimited.info",
                                       "btccash-seeder.bitcoinunlimited.info",
@@ -347,12 +347,12 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        // Bitcoin ABC seeder
+        // Bitcoin CLUB seeder
         vSeeds.push_back(CDNSSeedData("bitcoinabc.org",
                                       "testnet-seed.bitcoinabc.org", true));
         // bitcoinforks seeders
         vSeeds.push_back(CDNSSeedData(
-            "bitcoinforks.org", "testnet-seed-abc.bitcoinforks.org", true));
+            "bitcoinforks.org", "testnet-seed-club.bitcoinforks.org", true));
         // Bitprim
         vSeeds.push_back(
             CDNSSeedData("bitprim.org", "testnet-seed.bitprim.org", true));

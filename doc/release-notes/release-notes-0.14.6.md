@@ -1,4 +1,4 @@
-Bitcoin ABC version 0.14.6 is now available from:
+Bitcoin CLUB version 0.14.6 is now available from:
 
   <https://download.bitcoinabc.org/0.14.6/>
 

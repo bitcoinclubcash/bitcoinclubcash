@@ -1,10 +1,10 @@
 # TeamCity Contrib
 
-This directory contains files necessary for running builds on the Bitcoin-ABC Teamcity Instance.
+This directory contains files necessary for running builds on the Bitcoin-CLUB Teamcity Instance.
 
 # build.sh
 
-Basic build script for building Bitcoin-ABC under a basic ubuntu install.
+Basic build script for building Bitcoin-CLUB under a basic ubuntu install.
 
 # teamcitybot.py
 

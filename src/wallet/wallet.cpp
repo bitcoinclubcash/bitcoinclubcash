@@ -2294,7 +2294,7 @@ void CWallet::AvailableCoins(std::vector<COutput> &vCoins, bool fOnlySafe,
 
         bool safeTx = pcoin->IsTrusted();
 
-        // Bitcoin-ABC: Removed check that prevents consideration of coins from
+        // Bitcoin-CLUB: Removed check that prevents consideration of coins from
         // transactions that are replacing other transactions. This check based
         // on pcoin->mapValue.count("replaces_txid") which was not being set
         // anywhere.
@@ -2308,7 +2308,7 @@ void CWallet::AvailableCoins(std::vector<COutput> &vCoins, bool fOnlySafe,
         // D could all be accepted (instead of just B and D, or just A and A'
         // like the user would want).
 
-        // Bitcoin-ABC: retained this check as 'replaced_by_txid' is still set
+        // Bitcoin-CLUB: retained this check as 'replaced_by_txid' is still set
         // in the wallet code.
         if (nDepth == 0 && pcoin->mapValue.count("replaced_by_txid")) {
             safeTx = false;

@@ -1720,7 +1720,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>Asetukset:</translation>
@@ -1778,8 +1778,8 @@
         <translation>HTTP-palvelinta ei voitu käynnistää. Katso debug-lokista lisätietoja.</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Bitcoin-abc</translation>
+        <source>Bitcoin CLUB</source>
+        <translation>Bitcoin-club</translation>
     </message>
     <message>
         <source>The %s developers</source>

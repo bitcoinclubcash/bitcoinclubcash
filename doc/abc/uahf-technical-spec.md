@@ -264,7 +264,7 @@ NOTE 1: This is an optional feature which clients do not strictly have to
 implement.
 
 NOTE 2: This bit is currently referred to as NODE_BITCOIN_CASH and displayed
-as "CASH" in user interfaces of some Bitcoin clients (BU, ABC).
+as "CASH" in user interfaces of some Bitcoin clients (BU, CLUB).
 
 
 ## References

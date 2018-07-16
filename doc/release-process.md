@@ -1,4 +1,4 @@
-Bitcoin ABC Release Process
+Bitcoin CLUB Release Process
 ===========================
 
 
@@ -49,7 +49,7 @@ Bitcoin ABC Release Process
 
 9. Re-verify the uploads (make sure that downloading them, their checksums are ok)
 
-10. Create a [GitHub release](https://github.com/Bitcoin-ABC/bitcoin-abc/releases) 
+10. Create a [GitHub release](https://github.com/Bitcoin-CLUB/bitcoin-club/releases) 
 
 
 ## After Release
@@ -61,5 +61,5 @@ Bitcoin ABC Release Process
 13. Announce Release:
     - [Reddit](https://www.reddit.com/r/BitcoinABC/)
     - Twitter @Bitcoin_ABC
-    - Public slack channels friendly to Bitcoin ABC announcements 
-      (eg. #abc-announce on BTCforks,  #hardfork on BTCchat)
+    - Public slack channels friendly to Bitcoin CLUB announcements 
+      (eg. #club-announce on BTCforks,  #hardfork on BTCchat)

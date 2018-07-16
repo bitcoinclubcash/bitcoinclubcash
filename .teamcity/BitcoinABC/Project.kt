@@ -10,7 +10,7 @@ object Project : Project({
     uuid = "1ddf9a64-4576-455b-b8c5-1be776a90759"
     id = "BitcoinABC"
     parentId = "_Root"
-    name = "Bitcoin-ABC"
+    name = "Bitcoin-CLUB"
 
     vcsRoot(BitcoinABCGit)
 

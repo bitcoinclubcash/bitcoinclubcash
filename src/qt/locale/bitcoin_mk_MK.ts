@@ -572,14 +572,14 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-abc</name>
+    <name>bitcoin-club</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Bitcoin ABC</source>
-        <translation>Биткоин ABC</translation>
+        <source>Bitcoin CLUB</source>
+        <translation>Биткоин CLUB</translation>
     </message>
     <message>
         <source>Warning</source>
