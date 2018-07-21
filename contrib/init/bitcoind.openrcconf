@@ -1,0 +1,33 @@
+# /etc/conf.d/lyokocoind: config file for /etc/init.d/lyokocoind
+
+# Config file location
+#LYOKOCOIND_CONFIGFILE="/etc/lyokocoin/lyokocoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $LYOKOCOIND_USER)
+#LYOKOCOIND_PIDDIR="/var/run/lyokocoind"
+
+# What filename to give the pidfile
+#LYOKOCOIND_PIDFILE="${LYOKOCOIND_PIDDIR}/lyokocoind.pid"
+
+# Where to write lyokocoind data (be mindful that the blockchain is large)
+#LYOKOCOIND_DATADIR="/var/lib/lyokocoind"
+
+# User and group to own lyokocoind process
+#LYOKOCOIND_USER="lyokocoin"
+#LYOKOCOIND_GROUP="lyokocoin"
+
+# Path to lyokocoind executable
+#LYOKOCOIND_BIN="/usr/bin/lyokocoind"
+
+# Nice value to run lyokocoind under
+#LYOKOCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+LYOKOCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for lyokocoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+LYOKOCOIND_SIGTERM_TIMEOUT=60

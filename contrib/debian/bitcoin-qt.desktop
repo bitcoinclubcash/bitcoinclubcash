@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Lyokocoin ABC
+Comment=Connect to the Lyokocoin P2P Network
+Comment[de]=Verbinde mit dem Lyokocoin peer-to-peer Netzwerk
+Comment[fr]=Lyokocoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Lyokocoin, eşten eşe kriptografik sanal para birimi
+Exec=lyokocoin-qt %u
+Terminal=false
+Type=Application
+Icon=lyokocoin128
+MimeType=x-scheme-handler/lyokocoincash;
+Categories=Office;Finance;

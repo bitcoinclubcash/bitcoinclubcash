@@ -1,0 +1,99 @@
+# Copyright (c) 2018 The Lyokocoin developers
+
+project(lyokocoin-qt-locale)
+
+include(BrewHelper)
+find_brew_prefix(QT5_PREFIX qt5)
+
+find_package(Qt5LinguistTools HINTS "${QT5_PREFIX}")
+
+qt5_add_translation(LYOKOCOIN_QM_FILES
+	lyokocoin_af.ts
+	lyokocoin_af_ZA.ts
+	lyokocoin_ar.ts
+	lyokocoin_be_BY.ts
+	lyokocoin_bg_BG.ts
+	lyokocoin_bg.ts
+	lyokocoin_ca_ES.ts
+	lyokocoin_ca.ts
+	lyokocoin_ca@valencia.ts
+	lyokocoin_cs.ts
+	lyokocoin_cy.ts
+	lyokocoin_da.ts
+	lyokocoin_de.ts
+	lyokocoin_el_GR.ts
+	lyokocoin_el.ts
+	lyokocoin_en_GB.ts
+	lyokocoin_en.ts
+	lyokocoin_eo.ts
+	lyokocoin_es_AR.ts
+	lyokocoin_es_CL.ts
+	lyokocoin_es_CO.ts
+	lyokocoin_es_DO.ts
+	lyokocoin_es_ES.ts
+	lyokocoin_es_MX.ts
+	lyokocoin_es.ts
+	lyokocoin_es_UY.ts
+	lyokocoin_es_VE.ts
+	lyokocoin_et_EE.ts
+	lyokocoin_et.ts
+	lyokocoin_eu_ES.ts
+	lyokocoin_fa_IR.ts
+	lyokocoin_fa.ts
+	lyokocoin_fi.ts
+	lyokocoin_fr_CA.ts
+	lyokocoin_fr_FR.ts
+	lyokocoin_fr.ts
+	lyokocoin_gl.ts
+	lyokocoin_he.ts
+	lyokocoin_hi_IN.ts
+	lyokocoin_hr.ts
+	lyokocoin_hu.ts
+	lyokocoin_id_ID.ts
+	lyokocoin_it_IT.ts
+	lyokocoin_it.ts
+	lyokocoin_ja.ts
+	lyokocoin_ka.ts
+	lyokocoin_kk_KZ.ts
+	lyokocoin_ko_KR.ts
+	lyokocoin_ku_IQ.ts
+	lyokocoin_ky.ts
+	lyokocoin_la.ts
+	lyokocoin_lt.ts
+	lyokocoin_lv_LV.ts
+	lyokocoin_mk_MK.ts
+	lyokocoin_mn.ts
+	lyokocoin_ms_MY.ts
+	lyokocoin_nb.ts
+	lyokocoin_ne.ts
+	lyokocoin_nl.ts
+	lyokocoin_pam.ts
+	lyokocoin_pl.ts
+	lyokocoin_pt_BR.ts
+	lyokocoin_pt_PT.ts
+	lyokocoin_ro_RO.ts
+	lyokocoin_ro.ts
+	lyokocoin_ru_RU.ts
+	lyokocoin_ru.ts
+	lyokocoin_sk.ts
+	lyokocoin_sl_SI.ts
+	lyokocoin_sq.ts
+	lyokocoin_sr@latin.ts
+	lyokocoin_sr.ts
+	lyokocoin_sv.ts
+	lyokocoin_ta.ts
+	lyokocoin_th_TH.ts
+	lyokocoin_tr_TR.ts
+	lyokocoin_tr.ts
+	lyokocoin_uk.ts
+	lyokocoin_ur_PK.ts
+	lyokocoin_uz@Cyrl.ts
+	lyokocoin_vi.ts
+	lyokocoin_vi_VN.ts
+	lyokocoin_zh_CN.ts
+	lyokocoin_zh_HK.ts
+	lyokocoin_zh.ts
+	lyokocoin_zh_TW.ts
+)
+
+add_custom_target(locales DEPENDS ${LYOKOCOIN_QM_FILES})

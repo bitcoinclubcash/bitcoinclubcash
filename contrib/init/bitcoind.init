@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  lyokocoind The lyokocoin core server.
+#
+#
+# chkconfig: 345 80 20
+# description: lyokocoind
+# processname: lyokocoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/lyokocoind, see below
+if [ -f /etc/sysconfig/lyokocoind ]; then
+        . /etc/sysconfig/lyokocoind
+fi
+
+RETVAL=0
+
+prog=lyokocoind
+# you can override the lockfile via LYOKOCOIND_LOCKFILE in /etc/sysconfig/lyokocoind
+lockfile=${LYOKOCOIND_LOCKFILE-/var/lock/subsys/lyokocoind}
+
+# lyokocoind defaults to /usr/bin/lyokocoind, override with LYOKOCOIND_BIN
+lyokocoind=${LYOKOCOIND_BIN-/usr/bin/lyokocoind}
+
+# lyokocoind opts default to -disablewallet, override with LYOKOCOIND_OPTS
+lyokocoind_opts=${LYOKOCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $lyokocoind $lyokocoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

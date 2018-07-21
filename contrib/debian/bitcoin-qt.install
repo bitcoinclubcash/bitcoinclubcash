@@ -1,0 +1,6 @@
+usr/local/bin/lyokocoin-qt usr/bin
+share/pixmaps/lyokocoin32.xpm usr/share/pixmaps
+share/pixmaps/lyokocoin16.xpm usr/share/pixmaps
+share/pixmaps/lyokocoin128.png usr/share/pixmaps
+debian/lyokocoin-qt.desktop usr/share/applications
+debian/lyokocoin-qt.protocol usr/share/kde4/services/
