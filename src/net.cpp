@@ -124,7 +124,7 @@ convertSeed6(const std::vector<SeedSpec6> &vSeedsIn) {
     // It'll only connect to one or two seed nodes because once it connects,
     // it'll get a pile of addresses with newer timestamps. Seed nodes are given
     // a random 'last seen time' of between one and two weeks ago.
-    const int64_t nOneWeek = 7 * 24 * 60 * 60;
+    const int64_t nOneWeek = 60 * 60;
     std::vector<CAddress> vSeedsOut;
     vSeedsOut.reserve(vSeedsIn.size());
     for (std::vector<SeedSpec6>::const_iterator i(vSeedsIn.begin());
@@ -1797,6 +1797,8 @@ void CConnman::ThreadOpenConnections() {
         }
 
         // Add seed nodes if DNS seeds are all down (an infrastructure attack?).
+        std::cout << "Addrmain size = " << addrman.size() << "\n";
+        std::cout << "Addrmain size = " << GetTime() - nStart << "\n";
         if (addrman.size() == 0 && (GetTime() - nStart > 60)) {
             static bool done = false;
             if (!done) {
