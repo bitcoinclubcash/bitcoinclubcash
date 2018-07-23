@@ -222,7 +222,7 @@ public:
         }
         std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 */
-        
+
 
         assert(genesis.hashMerkleRoot ==
                uint256S("0xf149d7ec44780c732ef8ddb485e56b0a7b3dbc982c8ed8fcf1fec033f7a795be"));
@@ -232,8 +232,8 @@ public:
         // Note that of those with the service bits flag, most only support a
         // subset of possible options.
         // Lyokocoin ABC seeder
-        vSeeds.push_back(
-            CDNSSeedData("", "", true));
+        vSeeds.push_back(CDNSSeedData("vps1", "172.31.25.26", true));
+        vSeeds.push_back(CDNSSeedData("lapurema", "14.175.128.184", true));
             // CDNSSeedData("lyokocoincoinabc.org", "seed.lyokocoincoinabc.org", true));
         // lyokocoinforks seeders
         // vSeeds.push_back(CDNSSeedData("lyokocoincoinforks.org",
@@ -485,7 +485,8 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         // Bitcoin ABC seeder
-        vSeeds.push_back(CDNSSeedData("", "", true));
+        // vSeeds.push_back(CDNSSeedData("vitual", "192.168.1.38", true));
+        // vSeeds.push_back(CDNSSeedData("local", "192.168.1.48", true));
         // lyokocoincoinforks seeders
         // vSeeds.push_back(CDNSSeedData(
         //     "lyokocoincoinforks.org", "testnet-seed-abc.lyokocoincoinforks.org", true));
@@ -505,10 +506,10 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
         cashaddrPrefix = "loctest";
-        // vFixedSeeds = std::vector<SeedSpec6>(
-        //     pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
+        vFixedSeeds = std::vector<SeedSpec6>(
+            pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
-        vFixedSeeds = std::vector<SeedSpec6>();
+        // vFixedSeeds = std::vector<SeedSpec6>();
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
