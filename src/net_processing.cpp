@@ -1383,6 +1383,7 @@ static bool ProcessMessage(const Config &config, CNode *pfrom,
              SanitizeString(strCommand), vRecv.size(), pfrom->id);
     if (gArgs.IsArgSet("-dropmessagestest") &&
         GetRand(gArgs.GetArg("-dropmessagestest", 0)) == 0) {
+        std::cout << "== dropmessagestest ==" << "\n";
         LogPrintf("dropmessagestest DROPPING RECV MESSAGE\n");
         return true;
     }
@@ -1395,13 +1396,16 @@ static bool ProcessMessage(const Config &config, CNode *pfrom,
             Misbehaving(pfrom, 100, "no-bloom-version");
             return false;
         } else {
+            std::cout << "== disconnect ==" << "\n";
             pfrom->fDisconnect = true;
             return false;
         }
     }
 
     if (strCommand == NetMsgType::REJECT) {
+        std::cout << "== reject ==" << "\n";
         if (LogAcceptCategory(BCLog::NET)) {
+            std::cout << "== BCLog::NET ==" << "\n";
             try {
                 std::string strMsg;
                 uint8_t ccode;
@@ -1428,8 +1432,10 @@ static bool ProcessMessage(const Config &config, CNode *pfrom,
     }
 
     else if (strCommand == NetMsgType::VERSION) {
+        std::cout << "== NetMsgType::VERSION ==" << "\n";
         // Each connection can only send one version message
         if (pfrom->nVersion != 0) {
+            std::cout << "== NetMsgType::VERSION != 0 ==" << "\n";
             connman.PushMessage(
                 pfrom,
                 CNetMsgMaker(INIT_PROTO_VERSION)

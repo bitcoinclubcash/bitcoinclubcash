@@ -134,10 +134,10 @@ def main():
         ' * IPv4 as well as onion addresses are wrapped inside a IPv6 address accordingly.\n')
     g.write(' */\n')
     with open(os.path.join(indir, 'nodes_main.txt'), 'r') as f:
-        process_nodes(g, f, 'pnSeed6_main', 8333)
+        process_nodes(g, f, 'pnSeed6_main', 5333)
     g.write('\n')
     with open(os.path.join(indir, 'nodes_test.txt'), 'r') as f:
-        process_nodes(g, f, 'pnSeed6_test', 18333)
+        process_nodes(g, f, 'pnSeed6_test', 15333)
     g.write('#endif // LYOKOCOIN_CHAINPARAMSSEEDS_H\n')
 
 
