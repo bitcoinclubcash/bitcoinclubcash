@@ -3469,6 +3469,7 @@ static UniValue generate(const Config &config, const JSONRPCRequest &request) {
         throw JSONRPCError(RPC_INTERNAL_ERROR, "No coinbase script available");
     }
 
+    std::cout << "prepare generate new block...\n";
     return generateBlocks(config, coinbase_script, num_generate, max_tries,
                           true);
 }

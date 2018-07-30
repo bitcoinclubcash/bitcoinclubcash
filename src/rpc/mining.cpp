@@ -118,6 +118,8 @@ UniValue generateBlocks(const Config &config,
     int nHeightEnd = 0;
     int nHeight = 0;
 
+    std::cout << "generate new block...\n";
+
     {
         // Don't keep cs_main locked.
         LOCK(cs_main);
@@ -128,12 +130,14 @@ UniValue generateBlocks(const Config &config,
 
     unsigned int nExtraNonce = 0;
     UniValue blockHashes(UniValue::VARR);
+    std::cout << "nHeight = " << nHeight << "\n";
+    std::cout << "nHeightEnd = " << nHeightEnd << "\n";
     while (nHeight < nHeightEnd) {
         std::unique_ptr<CBlockTemplate> pblocktemplate(
             BlockAssembler(config).CreateNewBlock(
                 coinbaseScript->reserveScript));
-
         if (!pblocktemplate.get()) {
+            std::cout << "Couldn't create new block \n";
             throw JSONRPCError(RPC_INTERNAL_ERROR, "Couldn't create new block");
         }
 
@@ -151,16 +155,19 @@ UniValue generateBlocks(const Config &config,
         }
 
         if (nMaxTries == 0) {
+            std::cout << "nMaxtries = 0 \n";
             break;
         }
 
         if (pblock->nNonce == nInnerLoopCount) {
+            std::cout << "inner loop count \n";
             continue;
         }
 
         std::shared_ptr<const CBlock> shared_pblock =
             std::make_shared<const CBlock>(*pblock);
         if (!ProcessNewBlock(config, shared_pblock, true, nullptr)) {
+            std::cout << "Block not accepted. \n";
             throw JSONRPCError(RPC_INTERNAL_ERROR,
                                "ProcessNewBlock, block not accepted");
         }
@@ -173,6 +180,8 @@ UniValue generateBlocks(const Config &config,
             coinbaseScript->KeepScript();
         }
     }
+
+
 
     return blockHashes;
 }

@@ -271,7 +271,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 210000;
+        consensus.nSubsidyHalvingInterval = 400000;
         consensus.BIP34Height = 21111;
         consensus.BIP34Hash = uint256S(
             "0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8");
@@ -307,12 +307,15 @@ public:
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S(
-            "00000000000000000000000000000000000000000000002a650f6ff7649485da");
+            "0x00");
+        // 00000000000000000000000000000000000000000000002a650f6ff7649485da
 
         // By default assume that the signatures in ancestors of this block are
         // valid.
         consensus.defaultAssumeValid = uint256S(
-            "0000000000327972b8470c11755adf8f4319796bafae01f5a6650490b98a17db");
+            "0x00");
+
+        // 0000000000327972b8470c11755adf8f4319796bafae01f5a6650490b98a17db
 
         // August 1, 2017 hard fork
         consensus.uahfHeight = 1155875;
@@ -479,7 +482,7 @@ public:
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
+        fRequireStandard = true;
         fMineBlocksOnDemand = true;
 
         checkpointData = {
